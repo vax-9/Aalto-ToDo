@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+
+.modalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  border: 2px solid $secondary-blue;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.modalTitle {
+  margin: 0;
+  text-align: center;
+  color: $footer-blue;
+  font-size: 30px;
+  font-family: Karbon-semibold;
+}
+.inputLabel {
+  font-size: 16px;
+  font-family: Karbon-semibold;
+  color: $footer-blue;
+  text-transform: uppercase;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  input {
+    height: 30px;
+  }
+}
+
+.modalInput {
+  padding: 0 10px;
+  max-width: 190px;
+  width: 100%;
+  font-size: 16px;
+  font-family: Karbon-regular;
+  border: 2px solid $secondary-blue;
+  border-radius: 5px;
+  outline: none;
+}

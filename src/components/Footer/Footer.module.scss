@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background-color: $footer-blue;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+}
+.textContainer {
+  font-family: Karbon-regular;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 $min-margin;
+}
+.footerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.839);
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .footerText {
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    height: $footer-height-phone;
+    font-size: 10px;
+  }
+}
